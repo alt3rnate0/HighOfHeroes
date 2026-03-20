@@ -1,0 +1,21 @@
+modLoader="lowcodefml"
+showAsResourcePack = false
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="hoh"
+version="1.0.0"
+logoFile = "logo.png"
+logoBlur = false
+displayName="High of Heroes"
+description='''
+A Addon based on the people Ive met during my life time
+'''
+
+[[dependencies.hoh]]
+modId = "palladium"
+mandatory = true
+versionRange = "[4.4.1,)"
+ordering = "NONE"
+side = "BOTH"

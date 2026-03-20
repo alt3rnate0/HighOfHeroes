@@ -1,0 +1,13 @@
+{
+    "schemaVersion": 1,
+    "authors": [
+        "JohnTheMaker0"
+    ],
+    "environment": "*",
+    "id": "hoh",
+    "version": "1.0.0",
+    "name": "High of Heroes",
+    "description": "A Addon based on the people Ive met during my life time",
+    "icon": "logo.png",
+    "license": "All rights reserved"
+}

@@ -1,0 +1,13 @@
+{
+    "pack": {
+        "id": "hoh",
+        "pack_format": 15,
+        "description": "A Addon based on the people Ive met during my life time",
+        "version": "1.0.0"
+    },
+    "dependencies": {
+        "common": {},
+        "fabric": {},
+        "forge": {}
+    }
+}
