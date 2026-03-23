@@ -1,0 +1,30 @@
+{
+    "name": "Diamond Boy",
+    "persistent_data": true,
+    "background": "minecraft:textures/block/white_wool.png",
+    "icon": "minecraft:diamond",
+    "gui_display_type": "tree",
+    "abilities": {
+        "Shining Clap":{
+            "type": "palladium:dummy",
+            "icon": "minecraft:diamond",
+            "title": "Shining Clap",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 0,
+            "gui_position": "null",
+            "description": "A Clap that could send out a massive wave of air to knockback and do damage to your enemies",
+            "conditions": {
+                "enabling": [                {
+                                    "type": "palladium:action",
+                                    "cooldown": 0,
+                                    "key_type": "key_bind",
+                                    "needs_empty_hand": false,
+                                    "allow_scrolling_when_crouching": true
+                                }],
+                "unlocking": []
+            }
+        }
+    }
+}
