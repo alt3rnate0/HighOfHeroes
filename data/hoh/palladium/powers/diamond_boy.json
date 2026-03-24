@@ -93,13 +93,13 @@
         "Diamond Eyes":{
             "type": "palladium:energy_beam",
             "icon": "minecraft:diamond_sword",
-            "title": "Diamond Eyes",
+            "title": "null",
             "bar_color": "light_blue",
-            "hidden": false,
-            "hidden_in_bar": false,
+            "hidden": true,
+            "hidden_in_bar": true,
             "list_index": 1,
-            "gui_position": [0, 1],
-            "description": "Your eyes would glow Diamond and would forcfully shoot out lasers from them",
+            "gui_position": [0, 0],
+            "description": "null",
             "energy_beam": "hoh:diamond_eyes",
             "damage_type": "null",
             "damage": 5,
@@ -113,19 +113,22 @@
             "conditions": {
                 "enabling": [
                     {
-                        "type": "palladium:held",
-                        "cooldown": 0,
-                        "key_type": "key_bind",
-                        "needs_empty_hand": false
+                        "type": "palladium:action",
+                        "conditions":[
+                            {
+                                "type":"palladium:ability_enabled",
+                                "ability":"eye_layer"
+                            }
+                        ]
+                    },
+                    {
+                        "type":"palladium:held",
+                        "cooldown":0,
+                        "key_type":"right_click",
+                        "needs_emtpy_hand":"false"
                     }
                 ],
-                "unlocking": [
-                    {
-                        "type": "palladium:experience_level_buyable",
-                        "xp_level": 15,
-                        "flat_levels": true
-                    }
-                ]
+                "unlocking": []
             }
         },
         "Prism Reflection":{
@@ -215,6 +218,30 @@
             ],
             "conditions": {
                 "enabling": [],
+                "unlocking": []
+            }
+        },
+        "eye_layer":{
+            "type": "palladium:render_layer",
+            "icon": "minecraft:diamond_sword",
+            "title": "Diamond Eyes",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 1,
+            "gui_position": "null",
+            "description": "Your eyes would glow Diamond and would forcfully shoot out lasers from them",
+            "render_layer": "hoh:diamond_eye",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:toggle",
+                        "cooldown": 0,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
                 "unlocking": []
             }
         }
