@@ -10,8 +10,8 @@
             "icon": "minecraft:command_block",
             "title": "null",
             "bar_color": "light_gray",
-            "hidden": false,
-            "hidden_in_bar": false,
+            "hidden": true,
+            "hidden_in_bar": true,
             "list_index": -1,
             "gui_position": "null",
             "description": "null",
@@ -119,7 +119,13 @@
                         "needs_empty_hand": false
                     }
                 ],
-                "unlocking": []
+                "unlocking": [
+                    {
+                        "type": "palladium:experience_level_buyable",
+                        "xp_level": 15,
+                        "flat_levels": true
+                    }
+                ]
             }
         },
         "Prism Reflection":{
@@ -149,6 +155,66 @@
                         "allow_scrolling_when_crouching": true
                     }
                 ],
+                "unlocking": [
+                    {
+                        "type": "palladium:experience_level_buyable",
+                        "xp_level": 15,
+                        "flat_levels": true
+                    }
+]
+            }
+        },
+        "Diamond Punch":{
+            "type": "palladium:attribute_modifier",
+            "icon": "minecraft:diamond_chestplate",
+            "title": "Diamond Hands",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 3,
+            "gui_position": [0, 3],
+            "description": "Gives you a temporary boost of damage",
+            "attribute": "palladium:punch_damage",
+            "amount": 15,
+            "operation": 0,
+            "uuid": "498be4fb-af04-42f2-8948-e6ccdc0d99e1",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:activation",
+                        "cooldown": 0,
+                        "ticks": 60,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
+                "unlocking": [
+                    {
+                        "type": "palladium:experience_level_buyable",
+                        "xp_level": 15,
+                        "flat_levels": true
+                    }
+                ]
+            }
+        },
+        "Immunity":{
+            "type": "palladium:damage_immunity",
+            "icon": "minecraft:potion",
+            "title": "null",
+            "bar_color": "light_gray",
+            "hidden": true,
+            "hidden_in_bar": true,
+            "list_index": -1,
+            "gui_position": "null",
+            "description": "null",
+            "damage_sources": [
+                "minecraft:is_lightning",
+                "minecraft:is_fall",
+                "minecraft:is_projectile"
+            ],
+            "conditions": {
+                "enabling": [],
                 "unlocking": []
             }
         }
