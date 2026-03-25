@@ -1,0 +1,4 @@
+{
+  "textures": "hoh:textures/models/armor/diamond_boy/chestplate.png",
+  "model_layers": "palladium:humanoid#suit"
+}

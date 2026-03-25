@@ -1,25 +1,25 @@
 {
   "tooltip": [
-    "Diamond Boy's Armor Set"
+    "Cool Wood Armor"
   ],
   "armor_material": "minecraft:netherite",
-  "creative_mode_tab": "combat",
+  "creative_mode_tab": "minecraft:combat",
   "chest": {
-    "item_name": "wooden_chestplate",
+    "item_name": "diamondboy_chestplate",
     "tooltip": [
-      "Chestplate"
+      "Diamond Boys's Chestplate"
     ]
   },
   "legs": {
-    "item_name": "wooden_leggings",
+    "item_name": "diamondboy_leggings",
     "tooltip": [
-      "Leggings"
+      "Diamond Boy's Leggings"
     ]
   },
   "feet": {
-    "item_name": "wooden_boots",
+    "item_name": "diamondboy_boots",
     "tooltip": [
-      "Boots"
+      "Diamond Boy's Boots"
     ]
   }
 }
