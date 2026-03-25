@@ -245,6 +245,36 @@
                     }
                 ]
             }
+        },
+        "armor_layer":{
+            "type": "palladium:render_layer",
+            "icon": "minecraft:diamond_chestplate",
+            "title": "Diamond Boy Suit",
+            "bar_color": "light_blue",
+            "hidden": false,
+            "hidden_in_bar": false,
+            "list_index": 5,
+            "gui_position": [1, 0],
+            "description": "Diamond Boys Suit",
+            "render_layer": "hoh:diamond_boy_suit",
+            "conditions": {
+                "enabling": [
+                    {
+                        "type": "palladium:toggle",
+                        "cooldown": 0,
+                        "key_type": "key_bind",
+                        "needs_empty_hand": false,
+                        "allow_scrolling_when_crouching": true
+                    }
+                ],
+                "unlocking": [
+                    {
+                        "type": "palladium:experience_level_buyable",
+                        "xp_level": 15,
+                        "flat_levels": true
+                    }
+                ]
+            }
         }
      }  
 }
